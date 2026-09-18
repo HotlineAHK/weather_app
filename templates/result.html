@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ data.name }}, {{ data.country }}</h1>
+<p><strong>Температура:</strong> {{ data.temp }} °C</p>
+<p><strong>Ветер:</strong> {{ data.wind }} км/ч</p>
+<p><strong>Влажность:</strong> {{ data.humidity }} %</p>
+<p><strong>Время запроса:</strong> {{ data.time }}</p>
+<a href="/">Назад</a>
+{% endblock %}
